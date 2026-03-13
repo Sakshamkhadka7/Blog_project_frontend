@@ -30,7 +30,7 @@ const UploadBlog = () => {
     console.log(blogData);
     // API call here
     try {
-      let res = await fetch("http://localhost:9000/api/blog/blogPost", {
+      let res = await fetch("https://blog-project-backend-6.onrender.com/api/blog/blogPost", {
         method: "POST",
         body: blogData,
         credentials: "include",

@@ -14,7 +14,7 @@ const ExploreBlog = () => {
 
   // Fetch blogs from backend
   const getBlog = async () => {
-    let res = await fetch("http://localhost:9000/api/blog/displayBlog", {
+    let res = await fetch("https://blog-project-backend-6.onrender.com/api/blog/displayBlog", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
       credentials: "include",

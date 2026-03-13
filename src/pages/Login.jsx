@@ -16,7 +16,7 @@ const Login = () => {
     console.log(password);
 
     try {
-      let res = await fetch("http://localhost:9000/api/user/login", {
+      let res = await fetch("https://blog-project-backend-6.onrender.com/api/user/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

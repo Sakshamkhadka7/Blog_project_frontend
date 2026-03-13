@@ -22,7 +22,7 @@ const Register = () => {
     formData.append("password", password);
     formData.append("profileImage",profileImage);
     try {
-      let res = await fetch("http://localhost:9000/api/user/register", {
+      let res = await fetch("https://blog-project-backend-6.onrender.com/api/user/register", {
         method: "POST",
         body: formData,
       });

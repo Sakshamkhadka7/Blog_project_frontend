@@ -5,7 +5,7 @@ const Learn = () => {
 
   const getLearn = async () => {
     try {
-      let res = await fetch("http://localhost:9000/api/learn/displayLearn", {
+      let res = await fetch("https://blog-project-backend-6.onrender.com/api/learn/displayLearn", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

@@ -14,7 +14,7 @@ const EditComment = () => {
 
   const updateComment = async () => {
     let res = await fetch(
-      `http://localhost:9000/api/comment/updateComment/${id}`,
+      `https://blog-project-backend-6.onrender.com/api/comment/updateComment/${id}`,
       {
         method: "PUT",
         headers: {

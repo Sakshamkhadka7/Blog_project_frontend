@@ -6,7 +6,7 @@ const Product = () => {
   const getProduct = async () => {
     try {
       let res = await fetch(
-        "http://localhost:9000/api/product/displayProduct",
+        "https://blog-project-backend-6.onrender.com/api/product/displayProduct",
         {
           method: "GET",
           headers: {

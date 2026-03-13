@@ -9,7 +9,7 @@ export const UserProvider = ({ children }) => {
 
   const getMe = async () => {
     try {
-      let res = await fetch("http://localhost:9000/api/user/getMe", {
+      let res = await fetch("https://blog-project-backend-6.onrender.com/api/user/getMe", {
         method: "GET",
         credentials: "include",
       });
