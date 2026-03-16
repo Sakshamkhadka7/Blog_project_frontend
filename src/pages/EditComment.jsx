@@ -14,7 +14,7 @@ const EditComment = () => {
 
   const updateComment = async () => {
     let res = await fetch(
-      `https://blog-project-backend-6.onrender.com/api/comment/updateComment/${id}`,
+      `${import.meta.env.VITE_API_URL}/api/comment/updateComment/${id}`,
       {
         method: "PUT",
         headers: {

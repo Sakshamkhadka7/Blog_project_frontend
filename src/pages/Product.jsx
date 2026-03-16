@@ -6,7 +6,7 @@ const Product = () => {
   const getProduct = async () => {
     try {
       let res = await fetch(
-        "https://blog-project-backend-6.onrender.com/api/product/displayProduct",
+        `${import.meta.env.VITE_API_URL}/api/product/displayProduct`,
         {
           method: "GET",
           headers: {

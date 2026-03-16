@@ -5,7 +5,7 @@ const Learn = () => {
 
   const getLearn = async () => {
     try {
-      let res = await fetch("https://blog-project-backend-6.onrender.com/api/learn/displayLearn", {
+      let res = await fetch(`${import.meta.env.VITE_API_URL}/api/learn/displayLearn`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

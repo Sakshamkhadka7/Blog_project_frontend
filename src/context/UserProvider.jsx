@@ -9,7 +9,7 @@ export const UserProvider = ({ children }) => {
 
   const getMe = async () => {
     try {
-      let res = await fetch("https://blog-project-backend-6.onrender.com/api/user/getMe", {
+      let res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/getMe`, {
         method: "GET",
         credentials: "include",
       });
